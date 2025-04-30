@@ -359,6 +359,41 @@ leather_dyeable_files = [
     "leather_boots.json",
     "leather_horse_armor.json"
 ]
+trimmable_files = [
+    "leather_helmet.json",
+    "leather_chestplate.json",
+    "leather_leggings.json",
+    "leather_boots.json",
+
+    "chainmail_helmet.json",
+    "chainmail_chestplate.json",
+    "chainmail_leggings.json",
+    "chainmail_boots.json",
+
+    "iron_helmet.json",
+    "iron_chestplate.json",
+    "iron_leggings.json",
+    "iron_boots.json",
+
+    "gold_helmet.json",
+    "gold_chestplate.json",
+    "gold_leggings.json",
+    "gold_boots.json",
+
+    "diamond_helmet.json",
+    "diamond_chestplate.json",
+    "diamond_leggings.json",
+    "diamond_boots.json",
+
+    "netherite_helmet.json",
+    "netherite_chestplate.json",
+    "netherite_leggings.json",
+    "netherite_boots.json"
+]
+
+def is_trimmable_model(json_data, file_path=""):
+    normalized_path = os.path.basename(file_path).lower()
+    return normalized_path in trimmable_files
 
 def is_potion_model(json_data, file_path=""):
     """
@@ -700,6 +735,8 @@ def convert_json_format(json_data, is_item_model=False, file_path=""):
     
     # Special handling for fishing rods
     is_fishing_rod = is_fishing_rod_model(json_data, file_path)
+
+    is_trimmable = is_trimmable_model(json_data, file_path)
 
     # Special handling for bow and crossbow - moved before other conditions
     # Check the filename first for more accurate type detection
@@ -1055,6 +1092,9 @@ def convert_json_format(json_data, is_item_model=False, file_path=""):
             "entries": [] if not is_item_model else None
         }
     }
+
+    if is_trimmable:
+        new_format["model"]["property"] = "minecraft:trim_material"
 
     # Add display settings if present
     if "display" in json_data:
