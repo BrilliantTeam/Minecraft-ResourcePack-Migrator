@@ -352,6 +352,14 @@ def is_damage_model(json_data):
             return True
     return False
 
+leather_dyeable_files = [
+    "leather_helmet.json",
+    "leather_chestplate.json",
+    "leather_leggings.json",
+    "leather_boots.json",
+    "leather_horse_armor.json"
+]
+
 def is_potion_model(json_data, file_path=""):
     """
     Check if the JSON data represents a potion model based on file path
@@ -370,7 +378,7 @@ def is_potion_model(json_data, file_path=""):
         "lingering_potion.json",
         "tipped_arrow.json"
     ]
-    return normalized_path in potion_files or "horse_armor" in normalized_path
+    return normalized_path in potion_files or normalized_path in leather_dyeable_files
 
 def is_chest_model(json_data, file_path=""):
     """
@@ -883,7 +891,7 @@ def convert_json_format(json_data, is_item_model=False, file_path=""):
             }
         }
     elif is_potion:
-        if "horse_armor" in normalized_filename:
+        if normalized_filename in leather_dyeable_files:
             fallback = {
                 "type": "model",
                 "model": base_path,
@@ -892,6 +900,7 @@ def convert_json_format(json_data, is_item_model=False, file_path=""):
                     "default": -6265536
                 }]
             }
+
         else:
             fallback = {
                 "type": "model",
