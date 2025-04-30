@@ -671,7 +671,17 @@ def convert_json_format(json_data, is_item_model=False, file_path=""):
             if "leather" in normalized_filename:
                 base_path = "minecraft:item/leather_horse_armor"
             else:
-                base_path = "minecraft:item/leather_horse_armor" 
+                base_path = "minecraft:item/leather_horse_armor"
+
+        elif normalized_filename == "leather_boots.json":
+            base_path = "minecraft:item/leather_boots"
+        elif normalized_filename == "leather_leggings.json":
+            base_path = "minecraft:item/leather_leggings"
+        elif normalized_filename == "leather_chestplate.json":
+            base_path = "minecraft:item/leather_chestplate"
+        elif normalized_filename == "leather_helmet.json":
+            base_path = "minecraft:item/leather_helmet"
+
         elif textures.get("layer0") == "item/splash_potion_overlay":
             base_path = "minecraft:item/splash_potion"
         elif textures.get("layer0") == "item/lingering_potion_overlay":
