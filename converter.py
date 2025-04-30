@@ -1093,8 +1093,8 @@ def convert_json_format(json_data, is_item_model=False, file_path=""):
         }
     }
 
-    if is_trimmable:
-        new_format["model"]["property"] = "minecraft:trim_material"
+    # if is_trimmable:
+    #     new_format["model"]["property"] = "minecraft:trim_material"
 
     # Add display settings if present
     if "display" in json_data:
