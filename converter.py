@@ -370,7 +370,7 @@ def is_potion_model(json_data, file_path=""):
         "lingering_potion.json",
         "tipped_arrow.json"
     ]
-    return normalized_path in potion_files or "horse_armor" in normalized_path
+    return normalized_path in potion_files or "leather_horse_armor" in normalized_path
 
 def is_chest_model(json_data, file_path=""):
     """
@@ -1272,7 +1272,7 @@ def convert_json_format(json_data, is_item_model=False, file_path=""):
                             "type": "minecraft:potion",
                             "default": -13083194
                         }]
-                    elif "horse_armor" in normalized_filename:
+                    elif "leather_horse_armor" in normalized_filename:
                         entry["model"]["tints"] = [{
                             "type": "minecraft:dye",
                             "default": -6265536
@@ -1310,7 +1310,7 @@ def convert_json_format(json_data, is_item_model=False, file_path=""):
                         else:
                             normal_model = override["model"]
                 
-                if normal_model and cast_model:
+                if normal_model:
                     entry = {
                         "threshold": cmd,
                         "model": {
@@ -1322,7 +1322,7 @@ def convert_json_format(json_data, is_item_model=False, file_path=""):
                             },
                             "on_true": {
                                 "type": "minecraft:model",
-                                "model": cast_model
+                                "model": cast_model or normal_model
                             }
                         }
                     }
