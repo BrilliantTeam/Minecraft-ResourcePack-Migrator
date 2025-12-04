@@ -1,4 +1,4 @@
-README LANGUAGES [ [**English**](README.md) | [中文](README-中文.md) | [Spanish](README-Spanish.md) | [German](README-German.md) ]
+README LANGUAGES [ [English](README.md) | [中文](README-中文.md) | [Spanish](README-Spanish.md) | [**German**](README-German.md) ]
 # Minecraft-ResourcePack-Migrator 1.14 ~ 1.21.4+
 
 Ein Werkzeug, mit dem Minecraft Resourcenpakete aus älteren Versionen (1.14) in das neue Format (1.21.4+) umgewandelt werden können.
