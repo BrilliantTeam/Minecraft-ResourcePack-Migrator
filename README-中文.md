@@ -1,4 +1,4 @@
-README LANGUAGES [ [English](README.md) | [**中文**](README-中文.md) | [Spanish](README-Spanish.md) ]
+README LANGUAGES [ [English](README.md) | [**中文**](README-中文.md) | [Spanish](README-Spanish.md) | [German](README-German.md) ]
 # Minecraft-ResourcePack-Migrator 1.14 ~ 1.21.4+
 
 一個專門用於將 Minecraft 資源包（Resource Pack）從舊版本（1.14）轉換至 1.21.4+ 版本的工具。  

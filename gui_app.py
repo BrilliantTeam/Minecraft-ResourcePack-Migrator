@@ -41,182 +41,218 @@ TRANSLATIONS = {
     "title": {
         "zh": "Minecraft 資源包更新工具 (1.14 ~ 1.21.4+)",
         "en": "Minecraft Resource Pack Migrator (1.14 ~ 1.21.4+)",
-        "es": "Minecraft Migrador de Resource Packs (1.14 ~ 1.21.4+)"
+        "es": "Minecraft Migrador de Resource Packs (1.14 ~ 1.21.4+)",
+        "de": "Minecraft Resourcenpaket-Umwandler (1.14 zu 1.21.4+)"
     },
     "language_selection": {
-        "zh": "語言選擇 | Language Selection | Selector de lenguaje",
-        "en": "語言選擇 | Language Selection | Selector de lenguaje",
-        "es": "語言選擇 | Language Selection | Selector de lenguaje"
+        "zh": "語言選擇 | Language Selection | Selector de lenguaje | Sprache wählen",
+        "en": "語言選擇 | Language Selection | Selector de lenguaje | Sprache wählen",
+        "es": "語言選擇 | Language Selection | Selector de lenguaje | Sprache wählen",
+        "de": "語言選擇 | Language Selection | Selector de lenguaje | Sprache wählen"
     },
     "conversion_mode": {
         "zh": "轉換模式",
         "en": "Conversion Mode",
-        "es": "Modo de conversion"
+        "es": "Modo de conversion",
+        "de": "Umwandlungsmodus"
     },
     "mode_cmd": {
         "zh": "Custom Model Data 轉換",
         "en": "Custom Model Data Conversion",
-        "es": "Conversion de las Custom Model Data"
+        "es": "Conversion de las Custom Model Data",
+        "de": "CustomModelData-Umwandlung"
     },
     "mode_item": {
         "zh": "Item Model 轉換",
         "en": "Item Model Conversion",
-        "es": "Conversion de modelo de Items"
+        "es": "Conversion de modelo de Items",
+        "de": "Itemmodell-Umwandlung"
     },
     "mode_damage": {
         "zh": "Damage 轉換",
         "en": "Damage Conversion",
-        "es": "Conversion de Daño"
+        "es": "Conversion de Daño",
+        "de": "Schadensbasierte Umwandlung"
     },
     "file_list": {
         "zh": "檔案列表",
         "en": "File List",
-        "es": "Lista de Archivos"
+        "es": "Lista de Archivos",
+        "de": "Liste an Dateien"
     },
     "choose_folder": {
         "zh": "選擇資料夾",
         "en": "Choose Folder",
-        "es": "Seleccionar Carpeta"
+        "es": "Seleccionar Carpeta",
+        "de": "Ornder auswählen"
     },
     "choose_zip": {
         "zh": "選擇ZIP",
         "en": "Choose ZIP",
-        "es": "Seleccionar ZIP"
+        "es": "Seleccionar ZIP",
+        "de": "ZIP-Archiv auswählen"
     },
     "start_convert": {
         "zh": "開始轉換",
         "en": "Start Convert",
-        "es": "Iniciar Conversion"
+        "es": "Iniciar Conversion",
+        "de": "Umwandlung starten"
     },
     "author": {
         "zh": "作者：RiceChen_ | 版本：1.4.4",
         "en": "Author: RiceChen_ | v1.4.4",
-        "es": "Creador: RiceChen_ | Version: v1.4.4"
+        "es": "Creador: RiceChen_ | Version: v1.4.4",
+        "de": "Ersteller: RiceChen_ | v1.4.4"
     },
     "clear_files": {
         "zh": "清除檔案",
         "en": "Clear Files",
-        "es": "Limpiar archivos"
+        "es": "Limpiar archivos",
+        "de": "Dateien leeren"
     },
     "confirm_exit": {
         "zh": "確認離開",
         "en": "Confirm Exit",
-        "es": "Confirma Salir"
+        "es": "Confirma Salir",
+        "de": "Beenden"
     },
     "confirm_exit_processing": {
         "zh": "正在處理檔案中，確定要離開嗎？\n檔案處理將會中斷。",
         "en": "Processing files, are you sure to exit?\nFile processing will be interrupted.",
-        "es": "Aun procesando archivos, estas seguro que deseas salir?\nInterrumpira la conversion de archivos"
+        "es": "Aun procesando archivos, estas seguro que deseas salir?\nInterrumpira la conversion de archivos",
+        "de": "Es werden derzeit noch Dateien verarbeitet, möchtest du trotzdem beenden?\nDer Prozess wird dabei unterbrochen."
     },
     "confirm_exit_normal": {
         "zh": "確定要離開程式嗎？",
         "en": "Are you sure to exit?",
-        "es": "Estas seguro que quieres salir?"
+        "es": "Estas seguro que quieres salir?",
+        "de": "Bist du sicher, dass du beenden möchtest?"
     },
     "warning": {
         "zh": "警告",
         "en": "Warning",
-        "es": "Advertencia"
+        "es": "Advertencia",
+        "de": "Warnung"
     },
     "select_files_first": {
         "zh": "請先選擇檔案",
         "en": "Please select files first",
-        "es": "Porfavor seleccione primero los archivos"
+        "es": "Porfavor seleccione primero los archivos",
+        "de": "Bitte wähle zuerst die Dateien aus"
     },
     "complete": {
         "zh": "完成",
         "en": "Complete",
-        "es": "Completado"
+        "es": "Completado",
+        "de": "Abgeschlossen"
     },
     "conversion_complete": {
         "zh": "轉換完成！輸出檔案：{}",
         "en": "Conversion complete! Output file: {}",
-        "es": "Conversion completada! Archivo de salida: {}"
+        "es": "Conversion completada! Archivo de salida: {}",
+        "de": "Umwandlung abgeschlossen! Ergebnis: {}"
     },
     "select_folder": {
         "zh": "選擇資料夾",
         "en": "Select Folder",
-        "es": "Seleccionar Folder"
+        "es": "Seleccionar Folder",
+        "de": "Ordner auswählen"
     },
     "select_zip": {
         "zh": "選擇ZIP檔案",
         "en": "Select ZIP File",
-        "es": "Seleccionar achivo ZIP"
+        "es": "Seleccionar achivo ZIP",
+        "de": "ZIP-Archiv auswählen"
     },
     "extracting": {
         "zh": "正在解壓縮...",
         "en": "Extracting...",
-        "es": "Extrayendo..."
+        "es": "Extrayendo...",
+        "de": "Entpacke..."
     },
     "copying_files": {
         "zh": "正在複製檔案...",
         "en": "Copying files...",
-        "es": "Copiando archivos..."
+        "es": "Copiando archivos...",
+        "de": "Kopiere Dateien..."
     },
     "error": {
         "zh": "錯誤",
         "en": "Error",
-        "es": "Error"
+        "es": "Error",
+        "de": "Fehler"
     },
     "processing": {
         "zh": "處理中...",
         "en": "Processing...",
-        "es": "Procesando..."
+        "es": "Procesando...",
+        "de": "Verarbeite..."
     },
     "conversion_failed": {
         "zh": "轉換失敗：{}",
         "en": "Conversion failed: {}",
-        "es": "Fallo en la conversion: {}"
+        "es": "Fallo en la conversion: {}",
+        "de": "Umwandlung nicht abgeschlossen: {}"
     },
     "output_folder": {
         "zh": "輸出資料夾",
         "en": "Output Folder",
-        "es": "Carpeta de salida"
+        "es": "Carpeta de salida",
+        "de": "Ausgabeornder"
     },
     "open_output_folder": {
         "zh": "開啟輸出資料夾",
         "en": "Open Output Folder",
-        "es": "Abrir carpeta de salida"
+        "es": "Abrir carpeta de salida",
+        "de": "Ausgabeordner öffnen"
     },
     "change_output_folder": {
         "zh": "變更輸出位置",
         "en": "Change Output Location",
-        "es": "Cambiar carpeta de salida" 
+        "es": "Cambiar carpeta de salida",
+        "de": "Ausgabeort ändern"
     },
     "select_output_folder": {
         "zh": "選擇輸出資料夾",
         "en": "Select Output Folder",
-        "es": "Seleccionar Carpeta de Salida"
+        "es": "Seleccionar Carpeta de Salida",
+        "de": "Ausgabeort auswählen"
     },
     "conversion_mode_description": {
         "zh": "轉換模式說明",
         "en": "Conversion Mode Description",
-        "es": "Descripcion del Modo de Conversion"
+        "es": "Descripcion del Modo de Conversion",
+        "de": "Umwandlungsmodus-Beschreibung"
     },
     "mode_cmd_description": {
         "zh": "Custom Model Data 轉換模式：適用於依然想要在 1.21.4 以上版本使用 Custom Model Data 定義模型的狀況",
         "en": "Custom Model Data Conversion Mode: Suitable for scenarios where you want to continue using Custom Model Data to define models in versions 1.21.4 and above",
-        "es": "Modo de Conversion para las Custom Model Data: Indicado para escenarios donde prefieres continuar usando las Custom Model Data para especificar los modelos en versiones de la 1.21.4 en adelante"
+        "es": "Modo de Conversion para las Custom Model Data: Indicado para escenarios donde prefieres continuar usando las Custom Model Data para especificar los modelos en versiones de la 1.21.4 en adelante",
+        "de": "Custom Model Data Conversion Mode: Geeignet für Szenarien, in denen du weiterhin Custom Model Data verwenden möchtest, um Modelle in den Versionen 1.21.4 und höher zu definieren."
     },
     "mode_item_description": {
         "zh": "Item Model 轉換模式：直接將定義模型的方式變更為 Item Model，採用定義模型的最新方式",
         "en": "Item Model Conversion Mode: Directly changes the model definition method to Item Model, adopting the latest model definition approach",
-        "es": "Modo de Conversion para el Modelo de Items: Cambia directamente la definicion del modelo a un Item Model, acoplandose a la ultima implementacion valida"
+        "es": "Modo de Conversion para el Modelo de Items: Cambia directamente la definicion del modelo a un Item Model, acoplandose a la ultima implementacion valida",
+        "de": "Itemmodellumwandlung: Ändert die Modell-Definitionsmethode direkt auf Item Model und übernimmt den neuesten Ansatz zur Modell-Definition."
     },
     "mode_damage_description": {
         "zh": "Damage 轉換模式：僅針對透過耐久值來定義模型的情況，如果原先是 Custom Model Data + Damage 情況，請改用其他轉換模式",
         "en": "Damage Conversion Mode: Only for cases where models are defined by durability. If the original scenario involves Custom Model Data + Damage, please use a different conversion mode",
-        "es": "Modo de Conversion del Daño: Solo para casos donde los modelos tienen definidos por su durabilidad. Si el modelo original usa las Custom Model Data y el Daño, use un modo de conversion diferente"
+        "es": "Modo de Conversion del Daño: Solo para casos donde los modelos tienen definidos por su durabilidad. Si el modelo original usa las Custom Model Data y el Daño, use un modo de conversion diferente",
+        "de": "Damage Conversion Mode: Nur für Fälle, in denen Modelle durch Haltbarkeit definiert sind. Wenn das ursprüngliche Szenario Custom Model Data + Damage beinhaltet, verwende bitte einen anderen Konvertierungsmodus."
     },
     "report_issue": {
         "zh": "問題回報與功能請求",
         "en": "Bug and Feature Request",
-        "es": "Errores y Solicitud de nuevas Caracteristicas"
+        "es": "Errores y Solicitud de nuevas Caracteristicas",
+        "de": "Bugs und Funktionsvorschläge"
     },
     "file_generation_failed": {
         "zh": "未能生成輸出檔案",
         "en": "Failed to generate output file",
-        "es": "Error al generar el archivo de salida"
+        "es": "Error al generar el archivo de salida",
+        "de": "Die Ausgabedatei konnte nicht erstellt werden"
     }
 }
 
@@ -537,6 +573,13 @@ class ResourcePackConverter(tk.Tk):
         ttk.Radiobutton(
             self.lang_frame,
             text="Spanish",
+            variable=self.current_lang,
+            value="es"
+        ).pack(side=tk.LEFT, padx=20, pady=5)
+
+        ttk.Radiobutton(
+            self.lang_frame,
+            text="German",
             variable=self.current_lang,
             value="es"
         ).pack(side=tk.LEFT, padx=20, pady=5)

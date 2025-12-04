@@ -38,172 +38,212 @@ TRANSLATIONS = {
     "checking_python": {
         "zh": "檢查 Python 環境...",
         "en": "Checking Python environment...",
-        "es": "Verificando el entorno de Python..."
+        "es": "Verificando el entorno de Python...",
+        "de": "Python-Umgebung wird überprüft..."
     },
     "python_version_error": {
         "zh": "錯誤：需要 Python 3.6 或更新版本",
         "en": "Error: Python 3.6 or newer is required",
-        "es": "Error: Se requiere Python 3.6 o una versión más reciente"
+        "es": "Error: Se requiere Python 3.6 o una versión más reciente",
+        "de": "Fehler: Python Version 3.6 ist erforderlich"
     },
     "installing_package": {
         "zh": "正在安裝必要套件 {}...",
         "en": "Installing required package {}...",
-        "es": "Instalando paquete requerido {}..."
+        "es": "Instalando paquete requerido {}...",
+        "de": "Nötige Pakete werden installiert..."
     },
     "package_install_error": {
         "zh": "錯誤：無法安裝 {}",
         "en": "Error: Unable to install {}",
-        "es": "Error: No se puede instalar {}"
+        "es": "Error: No se puede instalar {}",
+        "de": "Fehler: {} konnte nicht installiert werden"
     },
     "input_dir_error": {
         "zh": "錯誤：找不到輸入資料夾 '{}'",
         "en": "Error: Input directory '{}' not found",
-        "es": "Error: No se encontró el directorio de entrada '{}'"
+        "es": "Error: No se encontró el directorio de entrada '{}'",
+        "de": "Fehler: Der Ordner '{}' wurde nicht gefunden"
     },
     "create_input_dir": {
         "zh": "請建立 '{}' 資料夾並放入要轉換的檔案",
         "en": "Please create '{}' directory and place files to convert",
-        "es": "Por favor, cree el directorio '{}' y coloque los archivos a convertir"
+        "es": "Por favor, cree el directorio '{}' y coloque los archivos a convertir",
+        "de": "Bitte erstelle den Ordner '{}' und lege die umzuwandelnden Dateien dort ab."
     },
     "searching_files": {
         "zh": "搜尋可轉換的檔案...",
         "en": "Searching for convertible files...",
-        "es": "Buscando archivos convertibles..."
+        "es": "Buscando archivos convertibles...",
+        "de": "Es wird nach umwandelbaren Dateien gesucht..."
     },
     "no_files_found": {
         "zh": "找不到需要轉換的檔案！",
         "en": "No files found for conversion!",
-        "es": "¡No se encontraron archivos para convertir!"
+        "es": "¡No se encontraron archivos para convertir!",
+        "de": "Keine Dateien für die Umwandlung gefunden!"
     },
     "check_list_title": {
         "zh": "檢查清單",
         "en": "Checklist",
-        "es": "Lista de verificación"
+        "es": "Lista de verificación",
+        "de": "Checkliste"
     },
     "check_json_exists": {
         "zh": "輸入資料夾中有 JSON 檔案",
         "en": "JSON files exist in input folder",
-        "es": "Existen archivos JSON en la carpeta de entrada"
+        "es": "Existen archivos JSON en la carpeta de entrada",
+        "de": "JSON-Dateien gefunden"
     },
     "check_json_format": {
         "zh": "JSON 檔案包含 'overrides' 和 'custom_model_data' 欄位",
         "en": "JSON files contain 'overrides' and 'custom_model_data' fields",
-        "es": "Los archivos JSON contienen campos 'overrides' y 'custom_model_data'"
+        "es": "Los archivos JSON contienen campos 'overrides' y 'custom_model_data'",
+        "de": "JSON-Dateien enthalten 'overrides' und 'custom_model_data'-Felder"
     },
     "check_file_location": {
         "zh": "檔案放在正確的位置（{}/ 資料夾中）",
         "en": "Files are in correct location (in {} folder)",
-        "es": "Los archivos están en la ubicación correcta (en la carpeta {})"
+        "es": "Los archivos están en la ubicación correcta (en la carpeta {})",
+        "de": "Die Dateien sind am richtigen Ort (im Ordner {})"
     },
     "found_files_title": {
         "zh": "可轉換的檔案",
         "en": "Convertible Files",
-        "es": "Archivos Convertibles"
+        "es": "Archivos Convertibles",
+        "de": "Umwandelbare Dateien"
     },
     "continue_prompt": {
         "zh": "是否繼續轉換？[Y/n]",
         "en": "Continue conversion? [Y/n]",
-        "es": "¿Continuar con la conversión? [S/n]"
+        "es": "¿Continuar con la conversión? [S/n]",
+        "de": "Umwandlung fortsetzen? [J/N]"
     },
     "conversion_cancelled": {
         "zh": "已取消轉換",
         "en": "Conversion cancelled",
-        "es": "Conversión cancelada"
+        "es": "Conversión cancelada",
+        "de": "Umwandlung gestoppt"
     },
     "env_check_complete": {
         "zh": "環境檢查完成，開始執行轉換程式...",
         "en": "Environment check complete, starting conversion...",
-        "es": "Verificación del entorno completada, iniciando conversión..."
+        "es": "Verificación del entorno completada, iniciando conversión...",
+        "de": "Umgebungsprüfung abgeschlossen, starte Umwandlung..."
     },
     "converter_not_found": {
         "zh": "錯誤：找不到轉換程式 (converter.py)",
         "en": "Error: Converter program (converter.py) not found",
-        "es": "Error: No se encontró el programa convertidor (converter.py)"
+        "es": "Error: No se encontró el programa convertidor (converter.py)",
+        "de": "Fehler: Umwandlungsprogramm (converter.py) wurde nicht gefunden"
     },
     "check_converter_location": {
         "zh": "請確認 converter.py 檔案在正確的位置",
         "en": "Please ensure converter.py is in the correct location",
-        "es": "Por favor, asegúrese de que converter.py esté en la ubicación correcta"
+        "es": "Por favor, asegúrese de que converter.py esté en la ubicación correcta",
+        "de": "Bitte prüfe, ob converter.py am richtigen Ort ist"
     },
     "execution_error": {
         "zh": "執行過程中發生錯誤：{}",
         "en": "Error during execution: {}",
-        "es": "Error durante la ejecución: {}"
+        "es": "Error durante la ejecución: {}",
+        "de": "Fehler im Prozess: {}"
     },
     "press_enter": {
         "zh": "按 Enter 鍵結束程式...",
         "en": "Press Enter to exit...",
-        "es": "Presione Enter para salir..."
+        "es": "Presione Enter para salir...",
+        "de": "Drücke Enter, um zu beenden..."
     },
     "title": {
         "zh": "Minecraft 資源包更新工具 (1.14 ~ 1.21.4+)",
         "en": "Minecraft Resource Pack Migrator (1.14 ~ 1.21.4+)",
-        "es": "Migrador de Paquetes de Recursos de Minecraft (1.14 ~ 1.21.4+)"
+        "es": "Migrador de Paquetes de Recursos de Minecraft (1.14 ~ 1.21.4+)",
+        "de": "Minecraft Resourcenpaket-Umwandler (1.14 zu 1.21.4+)"
     },
     "enter_mode_choice": {
         "zh": "請輸入 1、2 或 3",
         "en": "Please enter 1, 2 or 3",
-        "es": "Por favor ingrese 1, 2 o 3"
+        "es": "Por favor ingrese 1, 2 o 3",
+        "de": "Gib 1, 2 oder 3 ein"
     },
     "enter_language_choice": {
         "zh": "請輸入 1、2 或 3",
         "en": "Please enter 1, 2 or 3",
-        "es": "Por favor ingrese 1, 2 o 3"
+        "es": "Por favor ingrese 1, 2 o 3",
+        "de": "Bitte gib 1, 2 oder 3 ein"
     },
     "language_selection_prompt": {
-        "zh": "語言選擇 | Language Selection | Selección de idioma",
-        "en": "語言選擇 | Language Selection | Selección de idioma",
-        "es": "語言選擇 | Language Selection | Selección de idioma"
+        "zh": "語言選擇 | Language Selection | Selección de idioma | Sprachauswahl",
+        "en": "語言選擇 | Language Selection | Selección de idioma | Sprachauswahl",
+        "es": "語言選擇 | Language Selection | Selección de idioma | Sprachauswahl",
+        "de": "語言選擇 | Language Selection | Selección de idioma | Sprachauswahl",
     },
     "language_chinese": {
         "zh": "中文",
         "en": "Chinese",
-        "es": "Chino"
+        "es": "Chino",
+        "de": "Chinesisch"
     },
     "language_english": {
         "zh": "英文",
         "en": "English",
-        "es": "Inglés"
+        "es": "Inglés",
+        "de": "Englisch"
     },
     "language_spanish": {
         "zh": "西班牙文",
         "en": "Spanish",
-        "es": "Español"
+        "es": "Español",
+        "de": "Spanisch"
+    },
+    "language_german": {
+        "zh": "德语",
+        "en": "German",
+        "es": "Alemán",
+        "de": "Deutsch"
     },
     "choose_language": {
         "zh": "選擇語言",
         "en": "Choose Language",
-        "es": "Seleccionar Idioma"
+        "es": "Seleccionar Idioma",
+        "de": "Sprache auswählen"
     },
     "column_number": {
         "zh": "序號",
         "en": "No.",
-        "es": "Núm."
+        "es": "Núm.",
+        "de": "Nr."
     },
     "column_file_path": {
         "zh": "檔案路徑",
         "en": "File Path",
-        "es": "Ruta del Archivo"
+        "es": "Ruta del Archivo",
+        "de": "Dateipfad"
     },
     "choose_mode": {
         "zh": "選擇轉換模式",
         "en": "Choose Conversion Mode",
-        "es": "Seleccionar Modo de Conversión"
+        "es": "Seleccionar Modo de Conversión",
+        "de": "Umwandlungsmodus wählen"
     },
     "mode_cmd": {
         "zh": "Custom Model Data 轉換",
         "en": "Custom Model Data Conversion",
-        "es": "Conversión de Custom Model Data"
+        "es": "Conversión de Custom Model Data",
+        "de": "Custom Model Data Umwandlung"
     },
     "mode_item": {
         "zh": "Item Model 轉換",
         "en": "Item Model Conversion",
-        "es": "Conversión de Item Model"
+        "es": "Conversión de Item Model",
+        "de": "Itemmodell-Unwandlung"
     },
     "mode_damage": {
         "zh": "Damage 轉換",
         "en": "Damage Conversion",
-        "es": "Conversión de Daño"
+        "es": "Conversión de Daño",
+        "de": "Damage-basierte Umwandlung"
     }
 }
 

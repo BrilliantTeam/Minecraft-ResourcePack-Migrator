@@ -47,97 +47,116 @@ TRANSLATIONS = {
     "processing_start": {
         "zh": "開始處理檔案...",
         "en": "Starting file processing...",
-        "es": "Iniciando procesamiento de archivos..."
+        "es": "Iniciando procesamiento de archivos...",
+        "de": "Starte Dateiverarbeitung..."
     },
     "adjusting_structure": {
         "zh": "調整資料夾結構...",
         "en": "Adjusting folder structure...",
-        "es": "Ajustando estructura de carpetas..."
+        "es": "Ajustando estructura de carpetas...",
+        "de": "Verändere Ordnerstruktur..."
     },
     "moving_files": {
         "zh": "移動檔案中",
         "en": "Moving files",
-        "es": "Moviendo archivos"
+        "es": "Moviendo archivos",
+        "de": "Verschiebe Dateien"
     },
     "processing_files": {
         "zh": "處理檔案中",
         "en": "Processing files",
-        "es": "Procesando archivos"
+        "es": "Procesando archivos",
+        "de": "Verarbeite Dateien"
     },
     "creating_zip": {
         "zh": "建立ZIP檔案...",
         "en": "Creating ZIP file...",
-        "es": "Creando archivo ZIP..."
+        "es": "Creando archivo ZIP...",
+        "de": "Erstelle ZIP-Archiv..."
     },
     "compressing_files": {
         "zh": "壓縮檔案中",
         "en": "Compressing files",
-        "es": "Comprimiendo archivos"
+        "es": "Comprimiendo archivos",
+        "de": "Komprimiere Dateien"
     },
     "moved_models": {
         "zh": "已將物品模型從 {} 移動到 {}",
         "en": "Moved item models from {} to {}",
-        "es": "Modelos de objetos movidos de {} a {}"
+        "es": "Modelos de objetos movidos de {} a {}",
+        "de": "Itemmodelle wurde von {} nach {} verschoben"
     },
     "process_complete": {
         "zh": "處理完成！",
         "en": "Processing complete!",
-        "es": "¡Procesamiento completado!"
+        "es": "¡Procesamiento completado!",
+        "de": "Vorgang beendet!"
     },
     "converted_files_count": {
         "zh": "已轉換 {} 個檔案",
         "en": "Converted {} files",
-        "es": "Se convirtieron {} archivos"
+        "es": "Se convirtieron {} archivos",
+        "de": "{} Dateien wurden umgewandelt"
     },
     "output_file": {
         "zh": "輸出檔案",
         "en": "Output file",
-        "es": "Archivo de salida"
+        "es": "Archivo de salida",
+        "de": "Ausgabedatei"
     },
     "current_file": {
         "zh": "當前檔案：{}",
         "en": "Current file: {}",
-        "es": "Archivo actual: {}"
+        "es": "Archivo actual: {}",
+        "de": "Aktuelle Datei: {}"
     },
     "input_dir_error": {
         "zh": "錯誤：找不到輸入資料夾 '{}'",
         "en": "Error: Input directory '{}' not found",
-        "es": "Error: No se encontró el directorio de entrada '{}'"
+        "es": "Error: No se encontró el directorio de entrada '{}'",
+        "de": "Fehler: Ordner {} nicht gefunden"
     },
     "error_occurred": {
         "zh": "發生錯誤：{}",
         "en": "Error occurred: {}",
-        "es": "Ocurrió un error: {}"
+        "es": "Ocurrió un error: {}",
+        "de": "Es ist ein Fehler aufgetreten: {}"
     },
     "file_table_title": {
         "zh": "檔案處理報告",
         "en": "File Processing Report",
-        "es": "Reporte de Procesamiento de Archivos"
+        "es": "Reporte de Procesamiento de Archivos",
+        "de": "Dateiverarbeitungsjournal"
     },
     "file_name": {
         "zh": "檔案名稱",
         "en": "File Name",
-        "es": "Nombre del Archivo"
+        "es": "Nombre del Archivo",
+        "de": "Dateiname"
     },
     "file_type": {
         "zh": "類型",
         "en": "Type",
-        "es": "Tipo"
+        "es": "Tipo",
+        "de": "Typ"
     },
     "file_status": {
         "zh": "狀態",
         "en": "Status",
-        "es": "Estado"
+        "es": "Estado",
+        "de": "Status"
     },
     "status_converted": {
         "zh": "已轉換",
         "en": "Converted",
-        "es": "Convertido"
+        "es": "Convertido",
+        "de": "Umgewandelt"
     },
     "status_copied": {
         "zh": "已複製",
         "en": "Copied",
-        "es": "Copiado"
+        "es": "Copiado",
+        "de": "Kopiert"
     },
 }
 
