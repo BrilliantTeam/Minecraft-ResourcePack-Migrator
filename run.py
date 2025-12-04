@@ -14,7 +14,7 @@ The script supports multiple languages (Chinese, English, and Spanish), with ful
 multilingual support for all user interactions and messages.
 
 Author: RiceChen_
-Version: 1.4.3
+Version: 1.4.4
 """
 
 import subprocess

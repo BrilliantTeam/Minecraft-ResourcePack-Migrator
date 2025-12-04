@@ -15,7 +15,7 @@ Features:
 The module can be used both as a standalone command-line tool and as part of a GUI application.
 Author: RiceChen_
 
-Version: 1.4.3
+Version: 1.4.4
 """
 
 import json
@@ -347,7 +347,7 @@ def is_damage_model(json_data):
     # Check for damage-based predicates without custom_model_data
     for override in json_data.get("overrides", []):
         predicate = override.get("predicate", {})
-        if ("damaged" in predicate and "damage" in predicate and 
+        if ("damage" in predicate and 
             "custom_model_data" not in predicate):
             return True
     return False
@@ -452,7 +452,6 @@ def has_mixed_custom_damage(json_data):
     for override in json_data["overrides"]:
         predicate = override.get("predicate", {})
         if ("custom_model_data" in predicate and 
-            "damaged" in predicate and 
             "damage" in predicate):
             cmd_with_damage = True
             break
@@ -496,8 +495,7 @@ def convert_damage_model(json_data, base_texture=""):
     # Filter and sort overrides that have damage predicates
     damage_overrides = [
         override for override in json_data.get("overrides", [])
-        if ("damaged" in override.get("predicate", {}) and 
-            "damage" in override.get("predicate", {}) and
+        if ("damage" in override.get("predicate", {}) and
             "custom_model_data" not in override.get("predicate", {}))
     ]
     
@@ -573,7 +571,7 @@ def convert_mixed_custom_damage_model(json_data):
             }
         
         # Check if this is a damage state
-        if "damaged" in predicate and "damage" in predicate:
+        if "damage" in predicate:
             cmd_groups[cmd]["damage_states"].append({
                 "damage": float(predicate["damage"]),
                 "model": override["model"]
@@ -649,7 +647,7 @@ def convert_mixed_damage_model(json_data, cmd_value, base_model):
     for override in json_data.get("overrides", []):
         predicate = override.get("predicate", {})
         if (predicate.get("custom_model_data") == cmd_value and 
-            "damage" in predicate and "damaged" in predicate):
+            "damage" in predicate):
             damage_states.append({
                 "damage": float(predicate["damage"]),
                 "model": override["model"]
@@ -1333,7 +1331,7 @@ def convert_json_format(json_data, is_item_model=False, file_path=""):
                             "type": "minecraft:potion",
                             "default": -13083194
                         }]
-                    elif "horse_armor" in normalized_filename:
+                    elif "leather_horse_armor" in normalized_filename:
                         entry["model"]["tints"] = [{
                             "type": "minecraft:dye",
                             "default": -6265536
@@ -1371,7 +1369,7 @@ def convert_json_format(json_data, is_item_model=False, file_path=""):
                         else:
                             normal_model = override["model"]
                 
-                if normal_model and cast_model:
+                if normal_model:
                     entry = {
                         "threshold": cmd,
                         "model": {
@@ -1383,7 +1381,7 @@ def convert_json_format(json_data, is_item_model=False, file_path=""):
                             },
                             "on_true": {
                                 "type": "minecraft:model",
-                                "model": cast_model
+                                "model": cast_model or normal_model
                             }
                         }
                     }
@@ -1414,7 +1412,7 @@ def process_mixed_damage_models(json_data, output_path):
             }
             
         # Check if this is a base model (no damage predicate)
-        if "damage" not in predicate and "damaged" not in predicate:
+        if "damage" not in predicate:
             cmd_groups[cmd]["base_model"] = override["model"]
         else:
             # Add to damage states if it has damage predicate
@@ -1579,7 +1577,7 @@ def convert_item_model_format(json_data, output_path, input_path=""):
             }
 
         # Check for damage states
-        if "damage" in predicate and "damaged" in predicate:
+        if "damage" in predicate:
             cmd_groups[cmd]["has_damage"] = True
             cmd_groups[cmd]["damage_states"].append({
                 "damage": float(predicate["damage"]),
@@ -1908,7 +1906,6 @@ def process_directory(input_dir, output_dir, mode="cmd"):
                             "custom_model_data" in o.get("predicate", {}) or
                             (
                                 "custom_model_data" in o.get("predicate", {}) and
-                                "damaged" in o.get("predicate", {}) and
                                 "damage" in o.get("predicate", {})
                             )
                             for o in json_data.get("overrides", [])
