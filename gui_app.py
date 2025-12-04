@@ -581,7 +581,7 @@ class ResourcePackConverter(tk.Tk):
             self.lang_frame,
             text="German",
             variable=self.current_lang,
-            value="es"
+            value="de"
         ).pack(side=tk.LEFT, padx=20, pady=5)
 
     def create_conversion_mode(self):
