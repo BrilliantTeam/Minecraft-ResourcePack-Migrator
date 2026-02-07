@@ -15,7 +15,7 @@ Features:
 The module can be used both as a standalone command-line tool and as part of a GUI application.
 Author: RiceChen_
 
-Version: 1.4.5
+Version: 1.4.6
 """
 
 import json
@@ -496,6 +496,7 @@ def convert_damage_model(json_data, base_texture=""):
 
     # Create basic structure for damage model
     new_format = {
+        "oversized_in_gui": True,
         "model": {
             "type": "range_dispatch",
             "property": "damage",
@@ -563,6 +564,7 @@ def convert_mixed_custom_damage_model(json_data):
 
     # Create basic structure
     new_format = {
+        "oversized_in_gui": True,
         "model": {
             "type": "range_dispatch",
             "property": "custom_model_data",
@@ -777,6 +779,7 @@ def convert_json_format(json_data, is_item_model=False, file_path=""):
         
         # Create basic structure for new format
         new_format = {
+            "oversized_in_gui": True,
             "model": {
                 "type": "range_dispatch" if not is_item_model else "model",
                 "property": "custom_model_data" if not is_item_model else None,
@@ -895,6 +898,7 @@ def convert_json_format(json_data, is_item_model=False, file_path=""):
     elif is_head:
         # Create a simple conversion that doesn't use special head model type
         new_format = {
+            "oversized_in_gui": True,
             "model": {
                 "type": "range_dispatch" if not is_item_model else "model",
                 "property": "custom_model_data" if not is_item_model else None,
@@ -1102,6 +1106,7 @@ def convert_json_format(json_data, is_item_model=False, file_path=""):
 
     # Create basic structure
     new_format = {
+        "oversized_in_gui": True,
         "model": {
             "type": "range_dispatch" if not is_item_model else "model",
             "property": "custom_model_data" if not is_item_model else None,

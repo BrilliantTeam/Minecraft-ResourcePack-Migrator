@@ -14,7 +14,7 @@ The script supports multiple languages (Chinese, English, and Spanish), with ful
 multilingual support for all user interactions and messages.
 
 Author: RiceChen_
-Version: 1.4.5
+Version: 1.4.6
 """
 
 import subprocess
@@ -168,10 +168,10 @@ TRANSLATIONS = {
         "de": "Gib 1, 2 oder 3 ein"
     },
     "enter_language_choice": {
-        "zh": "請輸入 1、2 或 3",
-        "en": "Please enter 1, 2 or 3",
-        "es": "Por favor ingrese 1, 2 o 3",
-        "de": "Bitte gib 1, 2 oder 3 ein"
+        "zh": "請輸入 1、2、3 或 4",
+        "en": "Please enter 1, 2, 3 or 4",
+        "es": "Por favor ingrese 1, 2, 3 o 4",
+        "de": "Bitte gib 1, 2, 3 oder 4 ein"
     },
     "language_selection_prompt": {
         "zh": "語言選擇 | Language Selection | Selección de idioma | Sprachauswahl",
@@ -569,16 +569,21 @@ if __name__ == "__main__":
     console.print(f"1. [green]{get_text('language_chinese', 'zh')}[/green]")
     console.print(f"2. [blue]{get_text('language_english', 'en')}[/blue]")
     console.print(f"3. [yellow]{get_text('language_spanish', 'es')}[/yellow]")
+    console.print(f"4. [magenta]{get_text('language_german', 'de')}[/magenta]")
 
     lang_choice = Prompt.ask(
-        f"{get_text('enter_language_choice', 'zh')} / {get_text('enter_language_choice', 'en')} / {get_text('enter_language_choice', 'es')}",
+        f"{get_text('enter_language_choice', 'zh')} / "
+        f"{get_text('enter_language_choice', 'en')} / "
+        f"{get_text('enter_language_choice', 'es')} / "
+        f"{get_text('enter_language_choice', 'de')}",
         default="1"
     ).strip()
 
     lang = {
         "1": "zh",
         "2": "en",
-        "3": "es"
+        "3": "es",
+        "4": "de"
     }.get(lang_choice, "zh")
     
     # Display program title in selected language
