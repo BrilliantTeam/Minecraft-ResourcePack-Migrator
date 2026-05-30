@@ -1,17 +1,10 @@
 import os
 import subprocess
+import sys
 
 def create_exe():
-    """
-    Create an executable file that requires administrator privileges
-    
-    This function:
-    1. Creates a UAC manifest file for admin privileges
-    2. Creates a PyInstaller spec file with necessary configurations
-    3. Runs PyInstaller to create the executable
-    4. Cleans up temporary files
-    """
-    # Create manifest file content with admin privilege requirement
+
+                                                                   
     manifest_content = '''<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
   <assemblyIdentity
@@ -29,11 +22,11 @@ def create_exe():
   </trustInfo>
 </assembly>'''
     
-    # Write the manifest content to a file
+                                          
     with open('uac_manifest.xml', 'w', encoding='utf-8') as f:
         f.write(manifest_content)
 
-    # Create PyInstaller specification file with detailed build configuration
+                                                                             
     spec_content = '''# -*- mode: python ; coding: utf-8 -*-
 
 # Define the analysis configuration for PyInstaller
@@ -98,19 +91,19 @@ exe = EXE(
     icon='assets\\icon.ico'             # EXE Icon
 )'''
     
-    # Write the spec content to a file
+                                      
     with open('MCPackConverter.spec', 'w', encoding='utf-8') as f:
         f.write(spec_content)
     
-    # Run PyInstaller with the spec file
+                                        
     subprocess.run([
-        'pyinstaller',
-        '--clean',           # Clean PyInstaller cache
-        '--noconfirm',       # Remove output directory without confirmation
+        sys.executable, '-m', 'PyInstaller',
+        '--clean',                                    
+        '--noconfirm',                                                     
         'MCPackConverter.spec'
     ])
     
-    # Clean up temporary manifest file
+                                      
     if os.path.exists('uac_manifest.xml'):
         os.remove('uac_manifest.xml')
     

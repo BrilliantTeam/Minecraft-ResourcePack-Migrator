@@ -14,7 +14,7 @@ README LANGUAGES [ [English](README.md) | [**中文**](README-中文.md) | [Span
 > 但如果你發現出問題的點在非` model/item `目錄，或者於` model/item `但是沒有` Custom Model Data `或` Damage `，  
 > 那麼這並非轉換器的疏漏，因為轉換器根本不會處理這些檔案。  
 
-![image](https://github.com/user-attachments/assets/ae194619-5f2e-4b30-b7f8-c314cc7fc593)
+![image](https://github.com/user-attachments/assets/35bcbc26-01e8-4f29-92f4-5de1a5caa985)
 
 ## 主要功能
 

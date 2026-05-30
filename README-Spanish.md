@@ -14,7 +14,7 @@ Esta herramienta se centra principalmente en la conversión de formatos JSON de 
 > 
 > Sin embargo, si el problema surge de archivos fuera del directorio `models/item`, o de archivos dentro de `models/item` que no contienen `Custom Model Data` o `Damage`, no es culpa del convertidor, ya que no procesa esos archivos.  
 
-![image](https://github.com/user-attachments/assets/32cf80b9-9c9c-48a5-95a6-82ad753aec9a)
+![image](https://github.com/user-attachments/assets/100333e9-6740-4fe6-a848-1c9cfce2d46d)
 
 ## Características principales
 

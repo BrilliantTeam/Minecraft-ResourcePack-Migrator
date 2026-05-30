@@ -14,7 +14,7 @@ This tool primarily handles the conversion of item model JSON formats, helping c
 > 
 > However, if the issue arises from files outside the `models/item` directory, or from files within `models/item` that do not contain `Custom Model Data` or `Damage`, this is not a fault of the converter, as it does not process those files.  
 
-![image](https://github.com/user-attachments/assets/6faa4cc0-f224-4b90-8142-7a0b7b22d4ca)
+![image](https://github.com/user-attachments/assets/67b1056d-67e1-428e-9ce3-a60dbc302ef6)
 
 ## Key Features
 

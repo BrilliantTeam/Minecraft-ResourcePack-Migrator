@@ -16,7 +16,7 @@ Dieses Werkzeug fokussiert sich auf die Umwandlung von Itemmodellen im JSON-Form
 > Tritt das Problem jedoch durch Dateien außerhalb des Verzeichnisses `models/item` auf – oder durch Dateien innerhalb von `models/item`,
 > die weder `Custom Model Data` noch `Damage` enthalten –, liegt dies nicht am Konverter, da diese Dateien von ihm nicht verarbeitet werden.
 
-![image](https://github.com/user-attachments/assets/6faa4cc0-f224-4b90-8142-7a0b7b22d4ca)
+![image](https://github.com/user-attachments/assets/b3e1f2ad-d943-4e5a-ad37-43546a6c4ce1)
 
 ## Hauptfunktionen
 
